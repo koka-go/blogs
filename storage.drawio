@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-07T06:59:50.690Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="VxrFtWKh0E9TCqvDKFqI" version="16.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-07T07:21:38.490Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="Q3B9-avXMPZ-MHjuHg5n" version="16.2.2" type="github">
   <diagram id="OlZEOA0zvrnhem5579Ee" name="Page-1">
     <mxGraphModel dx="946" dy="506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -50,7 +50,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="CJ9ZkTnZIKFmRV_ew28D-16" value="RAFT" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=0;comic=1;sketch=0;fontColor=#007FFF;" parent="1" vertex="1">
-          <mxGeometry x="110" y="270" width="100" height="40" as="geometry" />
+          <mxGeometry x="110" y="260" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="CJ9ZkTnZIKFmRV_ew28D-17" value="chunk server" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;rounded=0;comic=1;sketch=0;fontSize=16;fontColor=#007FFF;strokeColor=#D0CEE2;fillColor=#A9C4EB;gradientColor=none;" parent="1" vertex="1">
           <mxGeometry x="20" y="450" width="100" height="60" as="geometry" />
@@ -69,6 +69,33 @@
         </mxCell>
         <mxCell id="CJ9ZkTnZIKFmRV_ew28D-22" value="&lt;span&gt;chunk server&lt;/span&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;rounded=0;comic=1;sketch=0;fontSize=16;fontColor=#007FFF;strokeColor=#D0CEE2;fillColor=#A9C4EB;gradientColor=none;" parent="1" vertex="1">
           <mxGeometry x="260" y="520" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTZLNdXTJdqXe5OXfxoS-4" value="blob的元数据&lt;br&gt;blob的chunk server分布" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FTZLNdXTJdqXe5OXfxoS-5" value="追加写的log blob&lt;br&gt;随机写的extent blob" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="490" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FTZLNdXTJdqXe5OXfxoS-7" value="64MB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="50" y="430" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTZLNdXTJdqXe5OXfxoS-9" value="64MB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="170" y="430" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTZLNdXTJdqXe5OXfxoS-10" value="64MB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="290" y="430" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTZLNdXTJdqXe5OXfxoS-11" value="root server" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;rounded=0;comic=1;sketch=0;fontSize=16;fontColor=#007FFF;strokeColor=#D0CEE2;fillColor=#A9C4EB;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTZLNdXTJdqXe5OXfxoS-12" value="&lt;span&gt;root server&lt;/span&gt;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;rounded=0;comic=1;sketch=0;fontSize=16;fontColor=#007FFF;strokeColor=#D0CEE2;fillColor=#A9C4EB;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="100" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTZLNdXTJdqXe5OXfxoS-13" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;comic=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTZLNdXTJdqXe5OXfxoS-14" value="" style="rounded=1;whiteSpace=wrap;html=1;comic=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="360" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
