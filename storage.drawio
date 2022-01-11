@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-11T09:53:43.871Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="8RUy04VJ3BrfKDUGTocw" version="16.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-11T12:15:56.137Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="o4xixaA5k2TbvIxPSiA7" version="16.2.4" type="github">
   <diagram id="OlZEOA0zvrnhem5579Ee" name="Page-1">
     <mxGraphModel dx="946" dy="1675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -304,7 +304,7 @@
           <mxGeometry x="630" y="120" width="157.5" height="38" as="geometry" />
         </mxCell>
         <mxCell id="sMiy3J58KoFoW8aBVP6N-15" value="原理说明：&lt;br&gt;1.PFS meta 采用xfs文件系统存入drive&lt;br&gt;2.元数据服务组织元数据方法：&lt;br&gt;1）先创建2级哈希目录，方便打散&lt;br&gt;&lt;div&gt;&lt;span&gt;2）目录的存储利用entryID，做哈希计算，得到hash_ID存入对应路径entry和inode&lt;/span&gt;&lt;/div&gt;&lt;div&gt;3）文件的存储继承父目录和哈希值，inode和dentry放在同一路径下&lt;/div&gt;&lt;div&gt;4）确定了文件的存储路径，文件的分片大小和storage target的选择&lt;/div&gt;&lt;div&gt;5）数据分片发送给目标storage target的，调用bytestore的meta和data做持久化&lt;/div&gt;&lt;div&gt;6）由于blob是64MB，对于修改写/跳跃写，底层出现空间浪费，所以做合并。合并触发是32次/1.5倍blob大小，超过128次进入前台合并，否则进入后台合并&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="794" y="30" width="260" height="120" as="geometry" />
+          <mxGeometry x="437" y="-170" width="260" height="230" as="geometry" />
         </mxCell>
         <mxCell id="sMiy3J58KoFoW8aBVP6N-17" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="FTZLNdXTJdqXe5OXfxoS-48" target="sMiy3J58KoFoW8aBVP6N-23">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -322,7 +322,7 @@
           <mxGeometry x="264" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="sMiy3J58KoFoW8aBVP6N-24" value="&lt;font style=&quot;font-size: 16px&quot; color=&quot;#007fff&quot;&gt;PLB&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fontColor=#1A1A1A;strokeColor=#D0CEE2;fillColor=#A9C4EB;comic=1;" vertex="1" parent="1">
-          <mxGeometry x="320" width="64" height="60" as="geometry" />
+          <mxGeometry x="300" width="64" height="60" as="geometry" />
         </mxCell>
         <mxCell id="sMiy3J58KoFoW8aBVP6N-25" value="&lt;font style=&quot;font-size: 16px&quot; color=&quot;#007fff&quot;&gt;client&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fontColor=#1A1A1A;strokeColor=#D0CEE2;fillColor=#A9C4EB;comic=1;" vertex="1" parent="1">
           <mxGeometry x="264" y="-60" width="120" height="30" as="geometry" />
